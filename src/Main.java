@@ -14,6 +14,15 @@ public class Main {
         }
         System.out.println();
 
+        //Задача 1 v2
+        System.out.println("Задача 1 v2");
+        if (clientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+        System.out.println();
+
         //Задача 2
         System.out.println("Задача 2");
         short clientDeviceYear = 2015;
@@ -34,8 +43,8 @@ public class Main {
 
         //Задача 3
         System.out.println("Задача 3");
-        int year = 1601;
-        boolean isYearLeap = (year % 4 == 0 && year % 100 != 0 || year % 400 == 0 && year > 1584);
+        int year = 1600;
+        boolean isYearLeap = ((year % 4 == 0 && year % 100 != 0 || year % 400 == 0) && year > 1584);
         if (isYearLeap) {
             System.out.println(year + " год являтся високосным");
         } else {
